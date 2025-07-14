@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -30,7 +30,9 @@ export default function Carousel() {
             current === index ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-          <Image
+          <Image 
+            width={1000}
+            height={1000}
             src={item.url}
             alt={`Slide ${index + 1}`}
             className="w-full h-full object-contain bg-white"

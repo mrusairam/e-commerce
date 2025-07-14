@@ -32,6 +32,8 @@ export default function Cards({ data }) {
           onClick={() => router.push(`/product/${item.id}`)}
         >
           <Image
+          width={100}
+          height={100}
             src={item.image}
             alt={item.title}
             className="w-40 h-40 object-contain mx-auto mb-4"
