@@ -3,6 +3,7 @@ import React from "react";
 import { useCart } from "@/Components/main/CartContext";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Cards({ data }) {
   const { addToCart } = useCart();
@@ -30,7 +31,7 @@ export default function Cards({ data }) {
           className="w-64 bg-white rounded-xl shadow-md p-5 cursor-pointer hover:shadow-lg transition"
           onClick={() => router.push(`/product/${item.id}`)}
         >
-          <img
+          <Image
             src={item.image}
             alt={item.title}
             className="w-40 h-40 object-contain mx-auto mb-4"
