@@ -13,11 +13,13 @@ export default function Custom404() {
         Oops! Page Not Found.
       </p>
       <p className="mt-2 text-gray-600 max-w-md text-center">
-        Sorry, the page you are looking for doesn't exist or has been moved.
+        Sorry, the page you are looking for doesn&apos;t exist or has been moved.
       </p>
-      <Link href="/"
-        className="mt-6 inline-block bg-[#EE4899] text-white px-6 py-3 rounded-md text-lg hover:bg-[#EE4899] transition">
-          Go Back to Home
+      <Link
+        href="/"
+        className="mt-6 inline-block bg-[#EE4899] text-white px-6 py-3 rounded-md text-lg hover:bg-[#EE4899] transition"
+      >
+        Go Back to Home
       </Link>
     </div>
   );
