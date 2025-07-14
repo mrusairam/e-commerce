@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useCart } from "@/Components/main/CartContext";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Image from "next/image";
 
 export default function ProductDetail({ params }) {
   const { addToCart } = useCart();
@@ -41,7 +42,7 @@ export default function ProductDetail({ params }) {
         
         {/* Image Side */}
         <div className="w-full lg:w-1/2 flex justify-center">
-          <img
+          <Image
             src={product.image}
             alt={product.title}
             className="max-w-full max-h-[400px] object-contain rounded-lg transition duration-300 transform hover:-translate-y-2 cursor-pointer"
