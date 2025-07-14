@@ -1,7 +1,6 @@
-import Cards from '@/Components/main/Cards';
-import React from 'react'
-import CategoryListing from '@/Components/main/Category';
-import Footer from '@/Components/main/Foooter';
+import Cards from "@/Components/main/Cards";
+import React from "react"
+import CategoryListing from "@/Components/main/Category";
 
 const  page = async ({params})=> {
     const cat = params.cat

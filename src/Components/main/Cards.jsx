@@ -1,14 +1,13 @@
-'use client';
-import React from 'react';
-import { useCart } from '@/Components/main/CartContext';
-import { toast } from 'react-toastify';
-import { useRouter } from 'next/navigation';
+"use client";
+import React from "react";
+import { useCart } from "@/Components/main/CartContext";
+import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 export default function Cards({ data }) {
   const { addToCart } = useCart();
   const router = useRouter();
 
-  
   const handleAddToCart = (event, product) => {
     event.stopPropagation();
     addToCart({
@@ -17,8 +16,8 @@ export default function Cards({ data }) {
       price: product.price,
       image: product.image,
     });
-    toast.success('Product added to cart!', {
-      position: 'bottom-right',
+    toast.success("Product added to cart!", {
+      position: "bottom-right",
       autoClose: 2000,
     });
   };
@@ -29,7 +28,7 @@ export default function Cards({ data }) {
         <div
           key={item.id}
           className="w-64 bg-white rounded-xl shadow-md p-5 cursor-pointer hover:shadow-lg transition"
-          onClick={() => router.push(`/product/${item.id}`)} 
+          onClick={() => router.push(`/product/${item.id}`)}
         >
           <img
             src={item.image}

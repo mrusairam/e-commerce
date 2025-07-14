@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
 import React from 'react';
-import { X, Plus, Minus } from 'lucide-react';
-import { useCart } from './CartContext';
+import { X, Plus, Minus } from "lucide-react";
+import { useCart } from "./CartContext";
 
 export default function Cart({ isOpen, onClose }) {
   const {

@@ -1,7 +1,7 @@
-import Cards from '@/Components/main/Cards'
-import { Product } from '@/library'
-import CategoryListing from '@/Components/main/Category'
-import React from 'react'
+import Cards from "@/Components/main/Cards";
+import { Product } from "@/library";
+import CategoryListing from "@/Components/main/Category";
+import React from "react";
 
 export const metadata = {
   title: "Pasha-Store",
